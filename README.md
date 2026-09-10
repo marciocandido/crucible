@@ -57,7 +57,9 @@ CRUCIBLE.md          # the board: consolidations and final synthesis — written
 
 ## Status
 
-**Phase 0 — Foundation.** This repository currently contains documentation only; no code has been implemented yet. See [`docs/roadmap.md`](docs/roadmap.md) for the phase plan and [`docs/adr/`](docs/adr) for the decisions this project is built on.
+**Foundation.** The checkout currently contains the Python foundation under
+`src/` and its tests. See [`docs/roadmap.md`](docs/roadmap.md) for the phase
+plan and [`docs/adr/`](docs/adr) for the decisions this project is built on.
 
 ## Documentation
 
