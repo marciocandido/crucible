@@ -1,10 +1,13 @@
 # AGENTS.md
 
-Convenções para agentes de código (qualquer CLI — Claude Code, Codex CLI, etc.) trabalhando neste repositório. Este arquivo espelha `CLAUDE.md`; mantenha os dois sincronizados.
+Instrução canônica para agentes de código. `CLAUDE.md` é somente uma ponte para
+este arquivo; não duplique regras entre os dois.
 
-## Convenções gerais
-
-As convenções de estilo, commit e fluxo de trabalho deste repositório seguem o padrão descrito em [`marciocandido/referencias`](https://github.com/marciocandido/referencias). Consulte esse repositório antes de assumir qualquer convenção não explicitada aqui.
+Leia o README, as ADRs e somente os arquivos diretamente afetados antes de
+editar. O checkout atual já contém a fundação Python (`src/crucible/`, testes e
+`pyproject.toml`); não o trate como fase de documentação apenas. O repositório
+externo de referências é fonte comparativa opcional, não autoridade: valide sua
+disponibilidade e pertinência antes de usá-lo.
 
 ## Regra central: anti-expansão (DEC-09)
 
@@ -18,7 +21,9 @@ Essa regra, definida em `docs/adr/ADR-001-escopo-v1.md` (DEC-09), vale tanto par
 
 ## Estado do projeto
 
-O repositório está na **Fase 0** (`docs/roadmap.md`): apenas documentação, sem código de implementação. A especificação da v1 está congelada em `docs/adr/ADR-001-escopo-v1.md` e `docs/adr/ADR-002-protocolo-execucao.md`.
+A fundação de implementação existe. As ADRs e o roadmap continuam definindo
+escopo e limites; confronte-os com o checkout antes de declarar uma fase ou
+decisão como vigente.
 
 ## Onde encontrar as decisões
 
@@ -31,6 +36,20 @@ O repositório está na **Fase 0** (`docs/roadmap.md`): apenas documentação, s
 ## Idiomas
 
 `README.md` é em inglês (candidato open source). Todo o restante da documentação é em português.
+
+## Método, publicação e ferramentas de apoio
+
+Faça leitura proporcional ao escopo, o menor diff correto e validação
+proporcional. Quando a solicitação autorizar implementação, ela também autoriza
+branch, validação, commit, push e PR pronta para revisão; correções permanecem
+na mesma branch/PR. Merge, release, deploy, dados reais, ações destrutivas e
+operações sensíveis exigem autorização própria. Preserve pedidos read-only ou
+sem publicação quando explícitos.
+
+Quando disponíveis, ai-memory apoia continuidade histórica; CBM, descoberta
+estrutural; corpus de referências, comparação técnica; e Agent Mail,
+coordenação concorrente. São apoios, não substitutos do checkout, contratos ou
+documentação canônica.
 
 <!-- ai-memory:start -->
 ## Memória entre sessões
